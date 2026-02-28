@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Web Engineering / Node
+node_modules/
+dist/
+
+# AI / Python
+__pycache__/
+*.py[cod]
+*venv/
+.env
+
+# Cloud Computing / Docker
+.docker/
