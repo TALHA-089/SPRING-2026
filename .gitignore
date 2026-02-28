@@ -13,3 +13,12 @@ __pycache__/
 
 # Cloud Computing / Docker
 .docker/
+
+# C# / .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
