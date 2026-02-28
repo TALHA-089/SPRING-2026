@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Campus Feedback - Task 2</title>
+</head>
+
+<body>
+
+    <h1>Campus Visit Feedback</h1>
+    <p>Please provide your feedback regarding your recent campus visit.</p>
+
+    <form action="http://www.bahria.com" method="post">
+
+        <p>
+            <label>Name: <input type="text" name="student_name" required></label><br><br>
+            <label>E-mail: <input type="email" name="email" required></label>
+        </p>
+
+        <p>
+            <strong>What did you like most about the campus?</strong><br>
+            <label><input type="checkbox" name="liked" value="campus"> Campus</label>
+            <label><input type="checkbox" name="liked" value="students"> Students</label>
+            <label><input type="checkbox" name="liked" value="location"> Location</label>
+            <label><input type="checkbox" name="liked" value="atmosphere"> Atmosphere</label>
+            <label><input type="checkbox" name="liked" value="dorm_rooms"> Dorm rooms</label>
+            <label><input type="checkbox" name="liked" value="sports"> Sports</label>
+        </p>
+
+        <p>
+            <strong>How did you become interested in the university?</strong><br>
+            <label><input type="radio" name="source" value="friends"> Friends</label>
+            <label><input type="radio" name="source" value="television"> Television</label>
+            <label><input type="radio" name="source" value="internet"> Internet</label>
+            <label><input type="radio" name="source" value="other"> Other</label>
+        </p>
+
+        <p>
+            <label>Additional Comments:<br>
+                <textarea name="comments" rows="4" cols="50"></textarea></label>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+
+    </form>
+
+</body>
+
+</html>

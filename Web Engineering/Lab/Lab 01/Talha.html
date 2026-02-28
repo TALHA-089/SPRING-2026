@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Talha Naveed - CV</title>
+    <style>
+        /* CORE SETTINGS FOR SINGLE GLANCE LAYOUT */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Forces full viewport height */
+            padding: 20px;
+        }
+
+        /* MAIN PAPER SHEET */
+        .resume-container {
+            background: white;
+            width: 1000px;
+            max-width: 100%;
+            height: 95vh;
+            /* Fits on screen */
+            display: grid;
+            grid-template-columns: 30% 70%;
+            /* SIDEBAR | MAIN CONTENT */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- LEFT SIDEBAR (DARK) --- */
+        .sidebar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar h2 {
+            font-size: 14px;
+            color: #bdc3c7;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .contact-info,
+        .education,
+        .skills,
+        .languages {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #3498db;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            border-bottom: 1px solid #7f8c8d;
+        }
+
+        .sidebar a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        .sidebar ul {
+            padding-left: 15px;
+        }
+
+        /* --- RIGHT CONTENT (LIGHT) --- */
+        .main-content {
+            padding: 30px 40px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .main-header h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .job-block,
+        .project-block {
+            margin-bottom: 12px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #2c3e50;
+        }
+
+        .company {
+            font-style: italic;
+            color: #555;
+            font-size: 13px;
+            float: right;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #7f8c8d;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .main-content p {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+
+        .main-content ul {
+            margin-left: 20px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .main-content li {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-container">
+
+        <div class="sidebar">
+            <div>
+                <h1>Talha Naveed</h1>
+                <h2>Software Engineering Student</h2>
+            </div>
+
+            <div class="contact-info">
+                <div class="section-title">Contact</div>
+                <p>📍 Islamabad, Pakistan</p>
+                <p>📞 +92 310 5088596</p>
+                <p>✉️ rajag47786@gmail.com</p>
+                <p>🔗 <a href="https://github.com/TALHA-089/">github.com/TALHA-089</a></p>
+            </div>
+
+            <div class="education">
+                <div class="section-title">Education</div>
+                <p><b>BS Software Engineering</b><br>
+                    Bahria University<br>
+                    <i>Exp. Grad: July 2027</i><br>
+                    PEC Accredited
+                </p>
+            </div>
+
+            <div class="skills">
+                <div class="section-title">Skills</div>
+                <p><b>Core:</b> Java, C++, SQL</p>
+                <p><b>Web:</b> Node.js, React, Express</p>
+                <p><b>DB:</b> PostgreSQL, MongoDB</p>
+                <p><b>Tools:</b> Git, Linux, VMs</p>
+                <p><b>Soft Skills:</b> Leadership, Problem Solving</p>
+            </div>
+
+            <div class="languages">
+                <div class="section-title">Languages</div>
+                <ul>
+                    <li>English (Professional)</li>
+                    <li>Urdu (Native)</li>
+                    <li>Punjabi (Native)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="main-header">
+                <h3>Professional Profile</h3>
+                <p>
+                    Software Engineering student with practical experience at <b>IMARAT Group</b>.
+                    Specialized in backend logic, microservices architecture, and database optimization.
+                    I combine technical proficiency in Java and Node.js with a strong professional
+                    commitment to delivering high-quality, scalable solutions in collaborative environments.
+                </p>
+            </div>
+
+            <div class="main-header">
+                <h3>Work Experience</h3>
+
+                <div class="job-block">
+                    <div class="job-title">Software Development Intern <span class="company">IMARAT Group</span></div>
+                    <span class="date">20th July 2025 – 20th August 2025</span>
+                    <ul>
+                        <li><b>Backend Optimization:</b> Collaborated with the core development team to refine backend
+                            logic, ensuring data consistency across modules.</li>
+                        <li><b>Enterprise Workflow:</b> Adapted quickly to agile methodologies, actively participating
+                            in sprints and code reviews.</li>
+                        <li><b>Documentation & Growth:</b> Contributed to technical documentation and demonstrated a
+                            strong learning curve aligned with IMARAT’s excellence culture.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-header">
+                <h3>Key Technical Projects</h3>
+
+                <div class="project-block">
+                    <div class="job-title">University FYP Management System</div>
+                    <span class="date">Node.js, React, MongoDB</span>
+                    <ul>
+                        <li>Architected a <b>Three-Tier Microservices system</b> to automate the Final Year Project
+                            lifecycle for 5 distinct user roles.</li>
+                        <li>Implemented Role-Based Access Control (RBAC) and secure JWT authentication for document
+                            security.</li>
+                    </ul>
+                </div>
+
+                <div class="project-block">
+                    <div class="job-title">WonderLand Toy Store (E-Commerce)</div>
+                    <span class="date">Node.js, PostgreSQL</span>
+                    <ul>
+                        <li>Engineered a <b>41-state Order Management Machine</b> to track complex delivery lifecycles
+                            from placement to fulfillment.</li>
+                        <li>Designed a normalized 18-table database (3NF) to optimize product filtering and query
+                            performance.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
