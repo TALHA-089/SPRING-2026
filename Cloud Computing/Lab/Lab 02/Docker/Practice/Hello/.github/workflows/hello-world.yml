@@ -1,0 +1,15 @@
+name: My First Pipeline
+
+# When should the robot wake up?
+on: [push]
+
+# What should the robot do?
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # Give the robot a Linux computer to work on
+    steps:
+      - name: My First Step
+        run: echo "Hello World! The pipeline is working."
+
+      - name: Show the Date
+        run: date

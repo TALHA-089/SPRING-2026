@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp 1: UI/UX Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .principle-card {
+            transition: all 0.3s ease;
+        }
+
+        .principle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans leading-normal tracking-normal">
+
+    <header class="bg-slate-900 text-white p-8 mb-10 text-center">
+        <h1 class="text-3xl font-bold">Experiment 1: Understanding UI/UX Principles</h1>
+        <p class="text-slate-400 mt-2">Analysis of Consistency, Feedback, Affordance, Simplicity, and Accessibility</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+        <!-- Principle Definition Section -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-12">
+            <div class="principle-card bg-white p-4 rounded-lg border-t-4 border-blue-500 shadow-sm">
+                <h3 class="font-bold text-blue-600">Consistency</h3>
+                <p class="text-xs text-gray-500">Uniform elements & behaviors.</p>
+            </div>
+            <div class="principle-card bg-white p-4 rounded-lg border-t-4 border-green-500 shadow-sm">
+                <h3 class="font-bold text-green-600">Feedback</h3>
+                <p class="text-xs text-gray-500">Response to user actions.</p>
+            </div>
+            <div class="principle-card bg-white p-4 rounded-lg border-t-4 border-purple-500 shadow-sm">
+                <h3 class="font-bold text-purple-600">Affordance</h3>
+                <p class="text-xs text-gray-500">Visual cues for function.</p>
+            </div>
+            <div class="principle-card bg-white p-4 rounded-lg border-t-4 border-yellow-500 shadow-sm">
+                <h3 class="font-bold text-yellow-600">Simplicity</h3>
+                <p class="text-xs text-gray-500">Intuitive & clean layout.</p>
+            </div>
+            <div class="principle-card bg-white p-4 rounded-lg border-t-4 border-red-500 shadow-sm">
+                <h3 class="font-bold text-red-600">Accessibility</h3>
+                <p class="text-xs text-gray-500">Inclusivity for all users.</p>
+            </div>
+        </div>
+
+        <!-- Comparative Analysis Table -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <table class="w-full text-left">
+                <thead class="bg-slate-100 border-b">
+                    <tr>
+                        <th class="p-4 font-bold text-slate-700">Platform</th>
+                        <th class="p-4 font-bold text-slate-700">Good Practice</th>
+                        <th class="p-4 font-bold text-slate-700">Bad Practice</th>
+                        <th class="p-4 font-bold text-slate-700">Principle Applied</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y">
+                    <tr>
+                        <td class="p-4 font-semibold">Amazon</td>
+                        <td class="p-4 text-sm">One-click checkout buttons with clear hierarchy.</td>
+                        <td class="p-4 text-sm">Navigation menus can be overly cluttered/complex.</td>
+                        <td class="p-4"><span
+                                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Affordance</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 font-semibold">Netflix</td>
+                        <td class="p-4 text-sm">Video previews start automatically (immediate engagement).</td>
+                        <td class="p-4 text-sm">Autoplay can be intrusive and break user control.</td>
+                        <td class="p-4"><span
+                                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Feedback</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 font-semibold">Airbnb</td>
+                        <td class="p-4 text-sm">Minimalist search bar with high contrast labels.</td>
+                        <td class="p-4 text-sm">Filtering options can be hidden too deep in mobile views.</td>
+                        <td class="p-4"><span
+                                class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded">Simplicity</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+            <h2 class="text-lg font-bold text-blue-800 mb-2">Findings Summary</h2>
+            <p class="text-sm text-blue-700">Analyzing platforms revealed that while <strong>Amazon</strong> excels in
+                affordance through button design, it often compromises <strong>Simplicity</strong> for the sake of
+                upselling features. In contrast, <strong>Netflix</strong> uses <strong>Consistency</strong> to ensure
+                that the mobile and TV experiences feel identical.</p>
+        </div>
+    </main>
+
+</body>
+
+</html>

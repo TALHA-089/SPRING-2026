@@ -1,0 +1,25 @@
+name: Full Quality Lifecycle
+
+on:
+  # Moment 1: Run whenever ANYONE pushes to ANY branch
+  push:
+  
+  # Moment 2: Run a "Simulated Merge" when a PR is opened to main
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run Tests
+        run: node test.js
+      - name: Notify on Failure
+        if: failure()  # This step ONLY runs if a previous step (like your tests) failed
+        run: |
+          echo "Sending alert: The build has failed on branch ${{ github.ref }}"
+          # In a real setup, you would use a 'Webhook' to send this to Discord/Slack 

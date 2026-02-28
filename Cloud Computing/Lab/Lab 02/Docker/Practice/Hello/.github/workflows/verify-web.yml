@@ -1,0 +1,24 @@
+name: Unit Test Verification
+
+on: 
+  push:
+    branches: [ "main" ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Get the Code
+        uses: actions/checkout@v4
+
+      - name: 2. Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 3. Run Quality Inspection (Unit Tests)
+        run: |
+          echo "Starting automated tests..."
+          node test.js
+          echo "All tests passed successfully!"

@@ -1,0 +1,1 @@
+[![Full Quality Lifecycle](https://github.com/TALHA-089/Hello-World/actions/workflows/full-test.yml/badge.svg)](https://github.com/TALHA-089/Hello-World/actions/workflows/full-test.yml)

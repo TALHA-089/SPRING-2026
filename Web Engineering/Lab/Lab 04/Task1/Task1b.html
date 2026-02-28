@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid - Container Basics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .page-title h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-title p {
+            color: #94a3b8;
+            margin-top: 8px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* ===== CSS GRID CONTAINER (3-column auto grid) ===== */
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 12px;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 16px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .container div {
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: #f1f5f9;
+            padding: 20px 10px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid rgba(148, 163, 184, 0.08);
+            cursor: default;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        }
+
+        .container div:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 10px 30px rgba(96, 165, 250, 0.15);
+            background: linear-gradient(135deg, #1e3a5f, #3b4f6b);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-title">
+        <h1>Nicknames</h1>
+        <p>A nickname is much more than just a name.<br>It's a whole <strong>FEELING!</strong></p>
+    </div>
+
+    <div class="container">
+        <div>Danu</div>
+        <div>Channo</div>
+        <div>Jaan</div>
+        <div>Malink</div>
+        <div>Cutu</div>
+        <div>Araain</div>
+    </div>
+
+</body>
+
+</html>
